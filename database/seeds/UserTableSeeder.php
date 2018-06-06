@@ -11,7 +11,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\Gafanhotos\User::class, 1)->states('admin')->create([
+        factory(\FederalSt\User::class, 1)->states('admin')->create([
             'name'  => 'Administrador',
             'email' => 'admin@teste.com.br',
             'phone' => '(62) 99999-0000',
@@ -19,7 +19,7 @@ class UserTableSeeder extends Seeder
             'password'  => bcrypt('federalst')
         ]);
 
-        factory(\Gafanhotos\User::class, 1)->states('user')->create([
+        factory(\FederalSt\User::class, 1)->states('user')->create([
             'name'  => 'Usuario Teste',
             'email' => 'user@teste.com.br',
             'phone' => '(62) 00000-0000',
@@ -27,7 +27,7 @@ class UserTableSeeder extends Seeder
             'password'  => bcrypt('federalst')
         ]);
 
-        factory(\Gafanhotos\User::class, 50)->states('user')->create();
+        factory(\FederalSt\User::class, 50)->states('user')->create();
 
     }
 }
