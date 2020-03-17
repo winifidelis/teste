@@ -3,67 +3,50 @@
 
 # Teste prático - Federal Soluções Técnicas
 
-Esse é o teste prático - Federal Soluções Técnicas
+Essa é uma resposta ao teste prático solicitado
 
-# Objetivos
-  - Conhecer as habilidades em:
-    - Programação PHP/Laravel (Conhecimentos básicos sobre Laravel)
-    - Organização (código/arquivos)
-    - Controle de versão
-    - Análise/Entendimento de requisitos
-    - Capacidade de cumprir prazos
-    - Determinação na busca novos conhecimentos
-
-# Atenção
-  - Tudo que for desenvolvido nesse teste não será comercializado ou utilizado comercialmente pela Federal ST ou algum de seus associados.
-  - A única intenção é avaliar o conhecimento atual do candidato
-
-# Aplicação
-Você deverá desenvolver uma simples aplicação, com Login e nível de acesso simples.
-O administrador do sistema deverá realizar a manutenção de veículos. Os dados para a tabela de veículos são:
-
- - Placa
- - Renavam
- - Modelo
- - Marca
- - Ano
- - Proprietário
- 
-- Todas as vezes que um veículo for cadastrado ou editado, deverá ser enviado um e-mail para o proprietário.
-- O e-mail do proprietário deverá ser buscado na tabela de usuários.
-- O CRUD do véiculo deverá ficar em uma área de administração. O proprietário não poderá ter acesso a essa área. 
-- Deverá haver uma área destinada ao proprietário. O proprietário deverá ser capaz de visualizar todos os seus véiculos. Ele não pode editar, excluir ou cadastrar novos veículos... apenas visualizar.
-
-### Usuários
-Existem dois tipos diferentes de usuários na aplicação:
-- Admin
-- User
-
-### Requisitos
-- [ ] Usar Laravel (TEM QUE SER USADO ESSE PROJETO)
-- [ ] Usar banco de dados Postgres
-- [ ] Não ter regra de negócio nos Controllers
-- [ ] Usar Event e Notifications para enviar os e-mail
-- [ ] Deixar informações no README.MD como podemos executar sua aplicação
-- [ ] Usar o github 
-
-### Como participar ?
-- Fazer o fork desse repositório
-- Nos enviar o link do projeto do github
-
-#### Dicas após baixar o projeto:
-- Rode as migrations
-- Rode as seeders
-- Esteja atento aos usuários padrões contidos na Seeder
+# Para funcionar
+ - Faça o download dos arquivos
+ - Abra o terminal e acesse a parta do projeto e execute o comando #composer update
 
 
-# Contato
-- Email: suporte@federalst.com.br
-- Telefone: 62 3928-5910 
 
-Entre em contato conosco, caso você tenha alguma dúvida ou quando terminar o projeto.
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:+SVOlq2B+/SP/kt+cnbH8/6vdx817dhv5K/9PkLWEg4=
+APP_DEBUG=true
+APP_URL=http://localhost
 
-# Tempo de execução
-- Você tem 2 dias pra realizar esse teste prático.
+LOG_CHANNEL=stack
 
-## SUBMETA SEU PROJETO, MESMO QUE VOCÊ NÃO O TERMINE. NESTE CASO, NOS EXPLIQUE QUAIS FORAM AS SUAS DIFICULDADES. 
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=teste
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+QUEUE_DRIVER=sync
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=*****
+MAIL_HOST=******
+MAIL_PORT=*****
+MAIL_USERNAME=*****
+MAIL_PASSWORD=****
+MAIL_ENCRYPTION=*****
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"

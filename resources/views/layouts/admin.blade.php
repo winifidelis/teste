@@ -49,6 +49,14 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @if(Auth::user()->role == 2)
+                                <a class="dropdown-item" href="{{ route('admin.addveiculo') }}">
+                                        {{ trans('auth.cadastrarveiculo') }}
+                                </a>
+                            <a class="dropdown-item" href="{{ route('admin.vertodososveiculos') }}">
+                                    {{ trans('auth.vertodososveiculos') }}
+                                </a>
+                            @endif
                             <a class="dropdown-item" href="{{ route('admin.logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

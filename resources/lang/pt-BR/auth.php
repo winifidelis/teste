@@ -27,5 +27,10 @@ return [
     'confirmpassword'   => 'Confirme a senha',
     'name'              => 'Nome',
     'cpf'               => 'CPF',
-    'phone'             => 'Celular'
+    'phone'             => 'Celular',
+    'vermeusveiculos'   => 'Ver meus veículos',
+    'cadastrarveiculo'   => 'Cadastrar veículo',
+    'excluirveiculo'   => 'Excluir veículo',
+    'vertodososveiculos'   => 'Ver todos os veículos',
+    'cadastrar'   => 'Cadastrar',
     ];

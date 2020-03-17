@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/vermeusveiculos', 'VeiculoController@vermeusveiculos')->name('vermeusveiculos');
 
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
     //Authentication Rotes
@@ -31,6 +32,15 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
     $this->post('password/reset','Auth\ResetPasswordController@reset');
 
     Route::get('/home', 'HomeController@index')->name('home');
+    
+    //Funções do testge
+    $this->get('/addveiculo','VeiculoController@addveiculo')->name('addveiculo');
+    $this->post('/storeveiculo','VeiculoController@storeveiculo')->name('storeveiculo');
+    $this->get('/vertodososveiculos','VeiculoController@vertodososveiculos')->name('vertodososveiculos');
+    $this->get('/editarveiculos','VeiculoController@editarveiculos')->name('editarveiculos');
+    $this->get('/excluirveiculos','VeiculoController@excluirveiculos')->name('excluirveiculos');
+    $this->post('/updateveiculo','VeiculoController@updateveiculo')->name('updateveiculo');
+    
 
 
 });

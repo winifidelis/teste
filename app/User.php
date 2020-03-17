@@ -5,6 +5,7 @@ namespace FederalSt;
 use FederalSt\Notifications\MyResetPasswordNotification;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use FederalSt\Veiculo;
 
 class User extends Authenticatable
 {
@@ -37,6 +38,11 @@ class User extends Authenticatable
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new MyResetPasswordNotification($token));
+    }
+    
+    public function veiculos()
+    {
+        return $this->hasMany(Veiculo::class);
     }
 
 
