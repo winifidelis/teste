@@ -18,7 +18,6 @@ Essa é uma resposta ao teste prático solicitado
 
 
 APP_NAME=Laravel
-
 APP_ENV=local
 APP_KEY=
 APP_DEBUG=true
