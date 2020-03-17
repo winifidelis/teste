@@ -17,11 +17,11 @@ Essa é uma resposta ao teste prático solicitado
 
 
 
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=http://localhost
+APP_NAME=Laravel<br>
+APP_ENV=local<br>
+APP_KEY=<br>
+APP_DEBUG=true<br>
+APP_URL=http://localhost<br>
 
 LOG_CHANNEL=stack
 
