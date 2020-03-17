@@ -36,8 +36,8 @@ class VeiculoController extends Controller
         $user = Auth::user();
         try {
             
-            //$user->notify(new Notificaruser($request->input('modelo')));
-        } catch (NotifiableException  $ex) {
+            $user->notify(new Notificaruser('O veículo '.$request->input('modelo').' foi adicionado em sua conta no nosso sistema'));
+        } catch (\Exception  $ex) {
             
         }
         
@@ -72,8 +72,8 @@ class VeiculoController extends Controller
         $veiculo->renavam = $request->input('renavam');
         $veiculo->update();
         try {
-            //$user->notify(new Notificaruser($request->input('modelo')));
-        } catch (NotifiableException  $ex) {
+            $user->notify(new Notificaruser('Seu veículo '.$request->input('modelo').' foi atualizado em nosso sistema'));
+        } catch (\Exception  $ex) {
             
         }
         return redirect()->route('admin.vertodososveiculos');

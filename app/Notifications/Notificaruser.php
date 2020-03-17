@@ -40,19 +40,7 @@ class Notificaruser extends Notification {
      */
     public function toMail($notifiable) {
         return (new MailMessage)
-                        ->line('The introduction to the notification.')
-                        ->action('Notification Action', url('/'))
-                        ->line('Thank you for using our application!');
-    }
-
-    public function novoveiculo($notifiable) {
-        return (new MailMessage)
-                        ->line('Um veiculo ' . $this->my_notification . ' foi cadastrado em sua conta.');
-    }
-
-    public function veiculomodificado($notifiable) {
-        return (new MailMessage)
-                        ->line('Seu veiculo ' . $this->my_notification . ' foi modificado em sua conta.');
+                        ->line($this->my_notification);
     }
 
     /**

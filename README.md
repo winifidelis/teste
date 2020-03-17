@@ -57,3 +57,17 @@ PUSHER_APP_CLUSTER=mt1
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
+ - Terminado de configurar o arquivo .env 
+   Abra o terminal e acesse a parta do projeto e execute o comando #php artisan key:generate
+ - Ainda com o terminal aberto execute o comando  #php artisan migrate:refresh --seed
+ - Execute o comando #php artisan serve e abra em seu navegador o endereço localhost:8000 ou o endereço que o laravel esteja configurado.
+
+Para utilizar o projeto utilize os seguinte usuários
+
+login admin@teste.com.br
+senha 123456
+
+
+login user@teste.com.br
+senha 123456
+
